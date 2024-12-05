@@ -8,4 +8,3 @@ TYPE T_POPULATION IS TABLE OF NUMBER INDEX BY VARCHAR2(64);
 	dbms_output.put_line(l_city_population('Smallville'));
 	dbms_output.put_line(l_i);
  END;
- 

@@ -1,0 +1,10 @@
+DECLARE 
+l_sales NUMBER(8,2) := 20000; 
+	l_bonus NUMBER(6,2); 
+BEGIN 
+	IF l_sales > 50000 THEN l_bonus := 1500; 
+	   ELSIF l_sales > 35000 THEN l_bonus := 500; 
+		ELSE l_bonus := 100; 
+	END IF; 
+	UPDATE employees SET salary = salary + l_bonus;
+END; 
