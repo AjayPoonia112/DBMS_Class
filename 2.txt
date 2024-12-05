@@ -5,5 +5,7 @@ TYPE T_POPULATION IS TABLE OF NUMBER INDEX BY VARCHAR2(64);
  BEGIN
 	l_city_population('Smallville')  := 2000;
 	l_i:= l_city_population('Smallville') ;
+	dbms_output.put_line(l_city_population('Smallville'));
+	dbms_output.put_line(l_i);
  END;
  
